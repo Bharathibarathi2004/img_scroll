@@ -1,5 +1,12 @@
-body{
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body,html{
     background-color: black;
+    width: 100%;
+    height: 100%;
 }
 .container{
     margin: 100px 0 0 200px;
@@ -7,8 +14,9 @@ body{
     height: 450px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
-
+    transition: all ease-in-out 0.5s;
 }
 .container img{
     width: 10%;
@@ -19,5 +27,19 @@ body{
     transition: all ease-in-out 0.5s;
 }
 .container img:hover{
-    width: 25%;
+    width: 200px;
+}
+.header{
+    display: flex;
+   justify-content: center;
+   background-color: #fb4c27;
+  
+    p{
+        color: #fff;
+        /* font-family: "Grey Qo", cursive; */
+        font-family: "Pacifico", cursive;
+        margin: 18px;
+        font-size: 25px;
+        font-weight: bold;
+    }
 }
